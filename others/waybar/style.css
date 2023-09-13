@@ -1,110 +1,172 @@
 * {
     border: none;
-    font-family: Jetbrains Mono Nerd Font;
-    font-size: 14px;
-    color: #ffffff;
-    border-radius: 8px;
-}
-
-
-window {
-	/*font-weight: bold;*/
-}
-window#waybar {
-    background: rgba(0, 0, 0, 0);
-}
-/*-----module groups----*/
-.modules-right {
-    background-color: rgba(0,0,0,0);
-    margin: 2px 10px 0 0;
-}
-.modules-center {
-    background-color: rgba(0,0,0,0);
-    margin: 2px 0 0 0;
-    padding: 0 8px 0 8px;
-}
-.modules-left {
-    margin: 2px 0 0 5px;
-    background-color: rgba(0,0,0,0);
-}
-/*-----modules indv----*/
-#workspaces {
-    padding: 1px 5px;
-    /* background-color: transparent; */
-    background-color: rgba(0,0,0,0);
-    border-radius: 8px;
-}
-#workspaces button {
-    padding: 1px 5px;
-    background-color: transparent;
-    /* background-color: rgba(0,43,51,0.85); */
-}
-#workspaces button:hover {
-    /*box-shadow: inherit;*/
-    background-color: transparent;
-    /*background-color: rgba(0,153,153,1);*/
-    border-radius: 5px;
-}
-#workspaces button.focused {
-    background-color: transparent;
-    /* background-color: rgba(0,43,51,0.85); */
-}
-#workspaces button.active{
-    background-color: transparent;
-    /* background-color: rgba(0,43,51,1);*/
     border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 11.5px;
+    min-height: 0;
+    transition: 0.3s;
 }
 
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
 
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #11111b;
+    transition: 0.3s;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #a6adc8;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 20px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 20px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    border-radius: 20px;
+}
+
+#custom-power_profile,
+#custom-weather,
+#window,
 #clock,
 #battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
 #cpu,
 #memory,
-#temperature,
-#network,
-#pulseaudio,
 #custom-media,
-#tray,
-#mode,
-#custom-power,
-#custom-menu,
-#idle_inhibitor {
-    padding: 0 10px;
+#backlight {
+    background: #1e1e2e;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 0;
+    margin-top: 5px;
+    border: 1px solid #181825;
 }
-#mode {
-    color: #cc3436;
-    font-weight: bold;
-}
-#custom-power {
-    background-color: rgba(0,119,179,0.6);
-    border-radius: 50px;
-    margin: 5px 5px;
-    padding: 1px 3px;
-}
-/*-----Indicators----*/
-#idle_inhibitor.activated {
-    color: #2dcc36;
-}
-#pulseaudio.muted {
-    color: #cc3436;
-}
-#battery.charging {
-    color: #2dcc36;
-}
-#battery.warning:not(.charging) {
-	color: #e6e600;
-}
-#battery.critical:not(.charging) {
-    color: #cc3436;
-}
-#temperature.critical {
-    color: #cc3436;
-}
-/*-----Colors----*/
-/*
- *rgba(0,85,102,1),#005566 --> Indigo(dye)
- *rgba(0,43,51,1),#002B33 --> Dark Green 
- *rgba(0,153,153,1),#009999 --> Persian Green 
- *
- */
 
+#temperature {
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 10px
+}
+
+#cpu {
+    border-radius: 20px 0px 0px 20px;
+}
+
+#temperature.critical {
+    color: #eba0ac;
+}
+
+#backlight {
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 7px;
+}
+
+#tray {
+    border-radius: 20px;
+    margin-right: 5px;
+    padding: 0px 4px;
+}
+
+#workspaces {
+    background: #1e1e2e;
+    border-radius: 20px;
+    margin-left: 5px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-power_profile {
+    color: #a6e3a1;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#window {
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#clock {
+    color: #fab387;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 0px;
+    border-right: 0px;
+    transition: 0.3s;
+}
+
+#network {
+    color: #f9e2af;
+    border-radius: 20px 0px 0px 20px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#bluetooth {
+    color: #89b4fa;
+    border-radius: 0 20px 20px 0;
+    margin-right: 10px
+} 
+
+#pulseaudio {
+    color: #89b4fa;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 20px;
+    margin-right: 7px;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 5px;
+    padding-right: 8px;
+}
+
+#battery {
+    color: #a6e3a1;
+    border-radius: 20px 0px 0px 20px;
+    border-left: 0px;
+}
+
+#custom-weather {
+    border-radius: 20px;
+    border-right: 0px;
+    margin-left: 0px;
+}
+
+#custom-media {
+  border-radius: 20px;
+}
