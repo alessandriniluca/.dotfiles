@@ -15,14 +15,9 @@
 ## Avizo
 - package: [click here](https://aur.archlinux.org/packages/avizo)
 - config position: not yer configured
-## swaylock
+## swaylock-effects
 Manages the lock screen.
-- package: [click here](https://archlinux.org/packages/extra/x86_64/swaylock/)
+- package: [click here](https://aur.archlinux.org/packages/swaylock-effects)
 - config position: ` $XDG_CONFIG_HOME/swaylock/`, which defaults to `~/.config/swaylock`
 
 Be sure to include also the folder "scrips"
-# Other utilities
-## bluetuith
-Manages bluetooth connections: [click here](https://aur.archlinux.org/packages/bluetuith-bin)
-## nmtui
-Manages network connections. Comes with `networkmanager` ([click here](https://man.archlinux.org/man/nmtui.1))
