@@ -1,11 +1,14 @@
 /** ********** Fonts ********** **/
 * {
+    /*all:unset;*/
     font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
     font-size: 12px;
 }
 
 #window {
-	background-color: --wofi-color0;
+	all:unset;
+	background: rgba(30,30,46,0.6);
+	/*background-color: --wofi-color0;*/
 	color: --wofi-color2;
 	border: 2px solid --wofi-color1;
 	border-radius: 0px;
@@ -13,12 +16,14 @@
 
 #outer-box {
 	padding: 20px;
+	/*background-color: transparent;*/
 }
 
 #input {
 	background-color: --wofi-color1;
 	border: 0px solid --wofi-color3;
 	padding: 8px 12px;
+	/*opacity: 0.8;*/
 }
 
 #scroll {
@@ -26,6 +31,8 @@
 }
 
 #inner-box {
+	/*opacity: 0.8;*/
+	/*background-color: transparent;*/
 }
 
 #img {
