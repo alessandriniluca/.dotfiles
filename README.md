@@ -6,7 +6,9 @@
 - [Roadmap](#roadmap)
 - [Problems I am aware of](#problems-i-am-aware-of)
 ## Notes
-**This is still under very active development. Up to now, files are really "dirty"** (I may have not followed good rules, such as parametrization), **and some may not work**. Why? Because I am still experimenting with this setup, and I still need to increase my desktop pc capacity before installing arch linux also on it. **So, take inspiration, but at you own risk**
+**This is still under very active development. Up to now, files are really "dirty"** (I may have not followed good rules, such as parametrization), **and some may not work**. Why? Because I am still experimenting with this setup, and I still need to increase my desktop pc capacity before installing arch linux also on it. **So, take inspiration, but at you own risk**.
+
+Why does this repo start with a dot (".")? Because I usually leave it in the home directory (with a clone), and I want this to be hidden: it will be not visible. What I usually do then, is to [symlink](https://www.freecodecamp.org/news/symlink-tutorial-in-linux-how-to-create-and-remove-a-symbolic-link/) each folder where needed.
 ## Repository purpose
 This repository contains my dotfiles, and is subdivided in
 - Desktop: dotfiles for the desktop pc (not yet set up)
