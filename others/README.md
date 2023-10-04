@@ -41,5 +41,10 @@ Manages the lock screen. Why not simply [swaylock](https://archlinux.org/package
 - config position: ` $XDG_CONFIG_HOME/swaylock/`, which defaults to `~/.config/swaylock`
 
 Be sure to include also the folder "scripts"
+### swaync
+Manages the notifications.
+- Package: [click here](https://aur.archlinux.org/packages/swaync)
+- config position: `~/.config/swaync`. The name of the style file is `style.css`, and optionally you can also have a file `config.json`.
+
 ### Swayidle
-**To be configured**
+**To be configured** if you want the pc to go idle after some time that it is not used.
