@@ -45,6 +45,13 @@ sudo chmod a+wr /opt/spotify/Apps -R
 - **Spicetify themes**: type `git clone https://github.com/spicetify/spicetify-themes.git`, and copy the interested theme folder with a dynamic link into the folder `/home/<user>/.config/spicetify/Themes` (just type: `ln -s /path/to/cloned/spicetify-themes/<theme_folder_name> /home/<user>/.config/spicetify/Themes/<theme_folder_name>`). Then run the following commands: `spicetify config current_theme <theme_folder_name>`, `spicetify backup apply`. The dynamic link is useful, since you may want to keep up to date the repository with the topgrade toml file.
 - **Other custom themes**: first give a try to the spicetify's ones. I'm currently using one of [catppuccin](https://github.com/catppuccin/spicetify.git). Clone their repo, and copy it with a dynamic link in the same folder (use a dynamic link for the same reason specified above): `ln -s /path/to/spicetify/catppuccin /home/<user>/.config/spicetify/Themes/catppuccin`. Once done that, you need to specify the color scheme with `spicetify config color_scheme <color-scheme>`, in my case `<color-scheme>` is `mocha`. Then `spicetify apply`.
 
+### Chuck Norris Quote in terminal
+Reference: [click here](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/chucknorris/).
+
+Dependencies:
+- [Fortune](https://archlinux.org/packages/?name=fortune-mod)
+- [Cowsay](https://archlinux.org/packages/extra/any/cowsay/)
+
 ## Roadmap
 Please, this roadmap may be a little bit confused or not complete. See it as my "todo list", things that comes to my mind and I say "ok *Landomix*, you need to implement this".
 
